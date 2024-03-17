@@ -61,8 +61,7 @@ def image_to_text(image_path):
         return text
 
 
-
-food_type = input("Enter the food type: ")
+food_type = image_to_text(input("Enter the food type: "))
 rating = get_sustainability_rating(image_to_text(food_type))
 if rating is not None:
     print(f"{food_type} is rated {rating} on the sustainability scale.")
